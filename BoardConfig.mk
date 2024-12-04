@@ -35,3 +35,5 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 TARGET_BOARD_PLATFORM := ums9230
 
 
+## Inherit partitions flags
+include device/infinix/X669D/partitions.mk
