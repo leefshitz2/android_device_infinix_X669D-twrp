@@ -88,3 +88,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 ## Inherit partitions flags
 include device/infinix/X669D/partitions.mk
+
+#flags
+include device/infinix/X669D/TW_flags.mk
