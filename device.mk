@@ -21,6 +21,9 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Hidl
+PRODUCT_ENFORCE_VINTF_MANIFEST := true 
+
 # A/B
 TARGET_IS_VAB := true
 ENABLE_VIRTUAL_AB := true
