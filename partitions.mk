@@ -40,11 +40,4 @@ BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := infinix_dynamic_partitions
 BOARD_INFINIX_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product
 BOARD_INFINIX_DYNAMIC_PARTITIONS_SIZE := 9122611200 
-
-#Symlink
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /vendor/bt_firmware:/bt_firmware \
-    /mnt/vendor/socko:/socko \
-    /mnt/sdcard/:sdcrad \
-    /system/product/:product \
-    /system/system_ext/:system_ext 
+ 
