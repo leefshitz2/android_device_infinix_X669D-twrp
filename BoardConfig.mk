@@ -86,21 +86,6 @@ BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
-#Modules 
-TARGET_RECOVERY_DEVICE_MODULES += \
-    libcap \
-    libion \
-    libxml2
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libcap.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
-    
-# Additional Libraries
-TARGET_RECOVERY_DEVICE_MODULES += \
-    libandroidicu 
-    $(OUT_DIR)/target/product/$(PRODUCT_DEVICE)/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
-  
 ## Inherit partitions flags
 include device/infinix/X669D/partitions.mk
 
