@@ -17,8 +17,7 @@
 LOCAL_PATH := device/infinix/X669D
 
 # Enable virtual A/B OTA
-$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Hidl
