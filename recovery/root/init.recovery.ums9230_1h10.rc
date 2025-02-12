@@ -1,2 +1,8 @@
 #add for board init.rc for recovery mode
 import /init.recovery.common.rc
+
+# Modules
+on early-init
+    insmod /vendor/lib/modules/adaptive-ts.ko
+    insmod /vendor/lib/modules/focaltech_ft8756_spi_ts.ko
+    insmod /vendor/lib/modules/goodix_fp.ko
